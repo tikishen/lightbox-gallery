@@ -1,0 +1,41 @@
+.grid {
+	position: relative;
+  }
+
+.item {
+	display: block;
+	position: absolute;
+	size: 65%;
+	width: 350px;
+	height: 235px;
+	line-height: 350px;
+	margin: 5px;
+	z-index: 1;
+}
+
+.item-long {
+	display: block;
+	position: absolute;
+	size: 65%;
+	width: 350px;
+	height: 535px;
+	line-height: 350px;
+	margin: 5px;
+	z-index: 1;
+}
+
+.item img, .item-long img{
+	width: 100%;
+}
+
+.item.muuri-item-dragging, .item-long.muuri-item-dragging {
+	z-index: 3;
+}
+
+.item.muuri-item-releasing, .item-long.muuri-item-releasing {
+	z-index: 2;
+}
+
+.item.muuri-item-hidden, .item-long.muuri-item-hidden {
+	z-index: 0;
+}
